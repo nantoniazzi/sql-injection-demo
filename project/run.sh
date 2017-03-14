@@ -1,3 +1,4 @@
 node app.js &
-echo "CG> open -s /project/target /index.html"
+echo "CG> success true"
+echo "CG> open -p 3000 /index.html"
 sleep 1000
