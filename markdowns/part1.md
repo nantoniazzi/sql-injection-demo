@@ -1,1 +1,1 @@
-This is part 1
+@[Run application]({"stubs": ['app.js', 'index.html', 'style.css'], "command": "run.sh"})

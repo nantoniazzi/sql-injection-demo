@@ -1,6 +1,10 @@
-title : Content name
+title : SQL Injection demo
 plan:
-  - title: Part 1
+  - title: SQL Injection
     statement: markdowns/part1.md
-  - title: Part 2
-    statement: markdowns/part2.md
+projects:
+  sql-injection:
+    root: /project
+    runner:
+      name: codingame/node-npm-runner
+      version: 1.1.0-node-7.4
