@@ -1,10 +1,12 @@
 # SQL code injection
 
-This is a little demonstration of a SQL injection in a simple login application. In our example, a database as been provisionned with an admin user. His credential are:
+This is a little demonstration of a SQL injection in a simple login application. In our example, a database as been provisionned with an admin user. His credential is:
 ```
 username: admin
 password: admin123
 ```
+
+@[Run application]({"stubs": ['index.html'], "command": "/bin/bash /project/target/run.sh"})
 
 In theory it should only be possible to login in the application using this credential, but if the application is not safely programmed, it is possible to penetrate in the system as an admin user without knowing the admin password.
 
