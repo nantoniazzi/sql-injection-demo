@@ -1,6 +1,6 @@
 # SQL code injection
 
-This is a little demonstration of a SQL injection in a simple login application. In our example, a database as been provisionned with an admin user. His credential is:
+This is a little demonstration of a SQL injection in a simple login application. In our example, a database as been provisionned with an admin user. Their credentials are:
 ```
 username: admin
 password: admin123
