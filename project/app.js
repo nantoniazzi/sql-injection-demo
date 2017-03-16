@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 var db = new sqlite3.Database(':memory:');
 db.serialize(function() {
   db.run("CREATE TABLE user (username TEXT, password TEXT, name TEXT)");
-  db.run("INSERT INTO user VALUES ('admin', 'admin123', 'Adam Baldwin')");
+  db.run("INSERT INTO user VALUES ('admin', 'admin123', 'App Administrator')");
 });
 // }
 app.post('/login', function (req, res) {
