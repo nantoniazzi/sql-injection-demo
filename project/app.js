@@ -23,19 +23,15 @@ app.post('/login', function (req, res) {
     console.log('query: ' + query);
     
     db.get(query , function(err, row) {
-        var html = '<html><body><pre>';
-        
-        if(err) {
-            html += err;
-        } else if (!row) {
-            html += 'User not found';
-        } else {
-            html += 'Hello <b>' + row.name + '</b>';
-        }
-        
-        html += '</pre><a href="/index.html">Go back to login</a></body></html>';
 
-        res.send(html);
+        if(err) {
+            console.log('ERROR', err);
+            res.redirect("/index.html#error");
+        } else if (!row) {
+            res.redirect("/index.html#unauthorized");
+        } else {
+            res.send('Hello <b>' + row.name + '</b><br /><a href="/index.html">Go back to login</a>');
+        }
     });
 
 });
