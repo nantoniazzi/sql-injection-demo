@@ -30,7 +30,7 @@ app.post('/login', function (req, res) {
         } else if (!row) {
             res.redirect("/index.html#unauthorized");
         } else {
-            res.send('Hello <b>' + row.name + '</b><br /><a href="/index.html">Go back to login</a>');
+            res.send('<div id="welcome">Hello <b>' + row.name + '</b><br /><a href="/index.html">Go back to login</a></div>');
         }
     });
 
